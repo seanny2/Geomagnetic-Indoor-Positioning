@@ -126,7 +126,7 @@ for i in range(sample_size):
 ### **3.3.5 실험 결과**
 측위 실험은 데이터 수집 경로와 동일하다. 각 기법에 대해 3개의 기종을 모두 사용하여 데이터를 수집하여 학습한 후 실험해본 결과, 기존 기법을 사용한 것에 비해 제안 기법을 사용할 때, 기기 종류와 상관없이 비슷한 평균 성능을 낼 수 있음을 알 수 있다.
 <p align="center" style="color:gray">
-    <img src="./img/09.png" width=60%" style="padding: 10px; margin: 0;" alt="모델"/>
+    <img src="./img/09.png" width=45%" style="padding: 10px; margin: 0;" alt="모델"/>
 </p>
 
 </div>
