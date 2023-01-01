@@ -31,7 +31,7 @@ GPS는 실외 공간에서만 동작한다는 한계가 있다. 실내의 사용
 스마트폰에 내장된 지자기 센서는 방위 정보를 얻을 수 있다. 지자기 센서에는 X, Y, Z의 3축 타입이 있으며, 그 방향의 자력치를 계측한다. 수집한 3개의 데이터로 아래와 같이 지구자기장 전체 세기를 구할 수 있다.
 $$\rm{Mag_F} = \sqrt{{Mag_X}^2+{Mag_Y}^2+{Mag_Z}^2}$$
 <p align="center" style="color:gray">
-    <img src="./img/10.png" width="90%" style="padding: 10px; margin:0;" alt="지자기세기"/><br/>
+    <img src="./img/10.png" width="50%" style="padding: 10px; margin:0;" alt="지자기세기"/><br/>
     <지자기센서 값>
 </p>
 
@@ -43,7 +43,7 @@ $$\rm{Mag_F} = \sqrt{{Mag_X}^2+{Mag_Y}^2+{Mag_Z}^2}$$
 ### **3.2.2 기종마다 다른 지구자기장 세기**
 기존의 지구자기장 세기 기반의 실내 측위 방법은 $\rm{Mag_F}$ 값만을 사용하여 지점마다의 고유한 지문으로써 사용되는데, 스마트폰에 내장된 자력계 센서가 민감하고, 기종마다 서로 다른 자력계 센서가 내장되어 있어 동일 지점에서 서로 다른 지구자기장 세기가 수집되는 문제점이 있다.
 <p align="center" style="color:gray">
-    <img src="./img/01.png" width="75%" style="padding: 0; margin:0;" alt="기종마다 다른 지구자기장 세기"/><br/>
+    <img src="./img/01.png" width="50%" style="padding: 0; margin:0;" alt="기종마다 다른 지구자기장 세기"/><br/>
     <기종마다 다른 지구자기장 세기>
 </p>
 
