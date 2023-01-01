@@ -66,7 +66,7 @@ $$\rm{Mag_F} = \sqrt{{Mag_X}^2+{Mag_Y}^2+{Mag_Z}^2}$$
 자연어 처리에 사용되는 1D 합성곱 신경망을 사용하여 지자기 변화 패턴을 제안 기법의 자원으로 사용하는 것이다. 이 기법은 현재 측정되는 지자기 세기 값 뿐만 아니라 과거 측정된 지자기 세기 값 또한 받아들여 그 관계성을 추가하여 측위 성능을 개선한다.
 ### **3.3.1 데이터 수집**
 <p align="center" style="color:gray">
-    <img src="./img/04.png" width="80%" style="padding: 10px; margin: 0;" alt="계명아트센터 지하주차장"/><br/>
+    <img src="./img/04.png" width="75%" style="padding: 10px; margin: 0;" alt="계명아트센터 지하주차장"/><br/>
     <계명아트센터 지하주차장>
 </p>
 
@@ -92,7 +92,7 @@ for i, path in enumerate(data_list):
     ))
 ```
 <p align="center" style="color:gray">
-    <img src="./img/05.png" width="90%" style="padding: 10px; margin: 0;" alt="데이터 전처리1"/>
+    <img src="./img/05.png" width="80%" style="padding: 10px; margin: 0;" alt="데이터 전처리1"/>
 </p>
 
 ### **데이터 패턴화**
@@ -104,11 +104,11 @@ for i in range(sample_size):
         py.append(j)
 ```
 <p align="center" style="color:gray">
-    <img src="./img/06.png" width="90%" style="padding: 10px; margin: 0;" alt="데이터 전처리2"/>
+    <img src="./img/06.png" width="80%" style="padding: 10px; margin: 0;" alt="데이터 전처리2"/>
 </p>
 아래 그림은 0번 라벨로 도출되기를 원하는 0번부터 4번 지점까지의 지자기 세기 변화 패턴과 1번 라벨로 도출되기를 원하는 1번부터 5번 지점까지의 지자기 세기 변화 패턴을, 그 뒤를 이어 2번 라벨로 도출되기를 원하는 2번부터 6번 지점까지의 지자기 세기 변화 패턴을 도식화하여 그린 것이다.
 <p align="center" style="color:gray">
-    <img src="./img/07.png" width="90%" style="padding: 10px; margin: 0;" alt="데이터 전처리3"/>
+    <img src="./img/07.png" width="80%" style="padding: 10px; margin: 0;" alt="데이터 전처리3"/>
 </p>
 
 ### **3.3.3 합성곱 신경망과 LSTM**
