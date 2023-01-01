@@ -1,0 +1,3 @@
+[submodule "capstone-android"]
+	path = capstone-android
+	url = https://github.com/hwan1625/capstone-android.git
