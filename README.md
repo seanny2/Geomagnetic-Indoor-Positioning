@@ -173,8 +173,7 @@ $python train.py --weights ./weights/model.pt --n_pattern 5
 ```
 
 ## **4.3 모델 경량화** : `convert.ipynb`
-학습된 모델은 모바일 적용을 위해 경량화 작업을 거친다:
-<a href="https://hwanny-yy.tistory.com/8" target="_blank" style="text-decoration: underline">모델 경량화 방법</a><br/>
+학습된 모델은 모바일 적용을 위해 경량화 작업을 거친다: [모델 경량화 방법]([url](https://hwanny-yy.tistory.com/8)){:target="_blank"} <br/>
 모델에 적용될 입출력 크기는 사전에 정의한 것과 동일하도록 수정해야 한다.
 ```python
 input_size = 4          # 채널 크기: X,Y,Z,F
@@ -184,5 +183,5 @@ output_size = 240       # point_n - pattern_n
 
 ## **4.4 실험**
 <div align="center">
-    <img src="./img/test.gif" width="25%" style="padding: 10px; margin: 0;" alt="모델"/>
+    <img src="./img/test.gif" width="30%" style="padding: 10px; margin: 0;" alt="모델"/>
 </div>
