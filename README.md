@@ -183,5 +183,5 @@ output_size = 240       # point_n - pattern_n
 
 ## **4.4 실험**
 <div align="center">
-    <img src="./img/test.gif" width="30%" style="padding: 10px; margin: 0;" alt="모델"/>
+    <img src="./img/test.gif" width="40%" style="padding: 10px; margin: 0;" alt="모델"/>
 </div>
