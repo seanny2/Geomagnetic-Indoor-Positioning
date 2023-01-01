@@ -31,7 +31,7 @@ GPS는 실외 공간에서만 동작한다는 한계가 있다. 실내의 사용
 스마트폰에 내장된 지자기 센서는 방위 정보를 얻을 수 있다. 지자기 센서에는 X, Y, Z의 3축 타입이 있으며, 그 방향의 자력치를 계측한다. 수집한 3개의 데이터로 아래와 같이 지구자기장 전체 세기를 구할 수 있다.
 $$\rm{Mag_F} = \sqrt{{Mag_X}^2+{Mag_Y}^2+{Mag_Z}^2}$$
 <p align="center" style="color:gray">
-    <img src="./img/10.png" width="50%" style="padding: 10px; margin:0;" alt="지자기세기"/><br/>
+    <img src="./img/10.png" width="60%" style="padding: 10px; margin:0;" alt="지자기세기"/><br/>
     <지자기센서 값>
 </p>
 
@@ -51,11 +51,11 @@ $$\rm{Mag_F} = \sqrt{{Mag_X}^2+{Mag_Y}^2+{Mag_Z}^2}$$
 또한, 건물에 사용된 건축 재료에 따라 그 왜곡의 정도도 다르기 때문에 장소에 따라 지자기 값의 변화 폭이 좁을 수 있다. 폭이 좁다는 것은 지점마다 표현할 수 있는 좌표의 수가 줄어들기 때문에 이것은 측위 성능을 저하시키는 큰 요인이 될 수 있다. 즉, 기본의 측위 기법은 단일 값으로만 좌표를 추출해내기 때문에 아래 그림과 같이 세기 분포 범위가 좁을수록 비슷한 값을 가진 여러 지점이 존재할 수 있다는 것이다.
 <div align="center" style="display:flex; margin-top:10px">
     <p align="center" style="color:gray">
-        <img src="./img/02.png" style="padding: 0; margin:0;" alt="표현가능범위1"/><br/>
+        <img src="./img/02.png" width="40%" style="padding: 0; margin:0;" alt="표현가능범위1"/><br/>
         <왜곡 현상이 적은 곳>
     </p>
     <p align="center" style="color:gray">
-        <img src="./img/03.png" style="padding: 0; margin:0;" alt="표현가능범위2"/><br/>
+        <img src="./img/03.png" width="40%" style="padding: 0; margin:0;" alt="표현가능범위2"/><br/>
         <왜곡 현상이 많은 곳>
     </p>
 </div>
@@ -92,7 +92,7 @@ for i, path in enumerate(data_list):
     ))
 ```
 <p align="center" style="color:gray">
-    <img src="./img/05.png" width="80%" style="padding: 10px; margin: 0;" alt="데이터 전처리1"/>
+    <img src="./img/05.png" width="75%" style="padding: 10px; margin: 0;" alt="데이터 전처리1"/>
 </p>
 
 ### **데이터 패턴화**
@@ -104,11 +104,11 @@ for i in range(sample_size):
         py.append(j)
 ```
 <p align="center" style="color:gray">
-    <img src="./img/06.png" width="80%" style="padding: 10px; margin: 0;" alt="데이터 전처리2"/>
+    <img src="./img/06.png" width="75%" style="padding: 10px; margin: 0;" alt="데이터 전처리2"/>
 </p>
 아래 그림은 0번 라벨로 도출되기를 원하는 0번부터 4번 지점까지의 지자기 세기 변화 패턴과 1번 라벨로 도출되기를 원하는 1번부터 5번 지점까지의 지자기 세기 변화 패턴을, 그 뒤를 이어 2번 라벨로 도출되기를 원하는 2번부터 6번 지점까지의 지자기 세기 변화 패턴을 도식화하여 그린 것이다.
 <p align="center" style="color:gray">
-    <img src="./img/07.png" width="80%" style="padding: 10px; margin: 0;" alt="데이터 전처리3"/>
+    <img src="./img/07.png" width="75%" style="padding: 10px; margin: 0;" alt="데이터 전처리3"/>
 </p>
 
 ### **3.3.3 합성곱 신경망과 LSTM**
