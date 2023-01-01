@@ -173,7 +173,7 @@ $python train.py --weights ./weights/model.pt --n_pattern 5
 ```
 
 ## **4.3 모델 경량화** : `convert.ipynb`
-학습된 모델은 모바일 적용을 위해 경량화 작업을 거친다: [모델 경량화 방법]([url](https://hwanny-yy.tistory.com/8)){:target="_blank"} <br/>
+학습된 모델은 모바일 적용을 위해 경량화 작업을 거친다: [모델 경량화 방법](https://hwanny-yy.tistory.com/8){:target="_blank"} <br/>
 모델에 적용될 입출력 크기는 사전에 정의한 것과 동일하도록 수정해야 한다.
 ```python
 input_size = 4          # 채널 크기: X,Y,Z,F
