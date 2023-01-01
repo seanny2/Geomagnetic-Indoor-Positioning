@@ -157,9 +157,9 @@ position-classifier
 1. 실험 경로 지정: 자기장 영향을 많이 받는 장소
 2. 실험 경로의 평균 걸음 수 측정
 3. 패턴화 간격 지정
-3. 안드로이드 자력계 센서를 이용하여 값 추출: <a href="https://developer.android.com/guide/topics/sensors/sensors_overview?hl=ko" target="_blank" style="text-decoration:underline">안드로이드 자력계 센서 제어 방법</a>
-4. 데이터 파일 저장: `./data/original`, `./data/test`
-5. 패턴화 작업 : `./data/train`
+3. 안드로이드 자력계 센서를 이용하여 값 추출: [안드로이드 센서 제어 방법](https://developer.android.com/guide/topics/sensors/sensors_overview?hl=ko)
+5. 데이터 파일 저장: `./data/original`, `./data/test`
+6. 패턴화 작업 : `./data/train`
 ```python
 # 예시
 point_n = 245       # 평균 걸음 수
@@ -173,7 +173,7 @@ $python train.py --weights ./weights/model.pt --n_pattern 5
 ```
 
 ## **4.3 모델 경량화** : `convert.ipynb`
-학습된 모델은 모바일 적용을 위해 경량화 작업을 거친다: [모델 경량화 방법](https://hwanny-yy.tistory.com/8){:target="_blank"}
+학습된 모델은 모바일 적용을 위해 경량화 작업을 거친다: [모델 경량화 방법](https://hwanny-yy.tistory.com/8)
 모델에 적용될 입출력 크기는 사전에 정의한 것과 동일하도록 수정해야 한다.
 ```python
 input_size = 4          # 채널 크기: X,Y,Z,F
