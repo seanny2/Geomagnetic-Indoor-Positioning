@@ -15,9 +15,10 @@ from classifier.models.cnn1d import PositionClassifier
 def define_argparser():
     p = argparse.ArgumentParser()
     p.add_argument("--weights", required=True)
+    p.add_argument("--n_pattern", type=int, required=True)
     p.add_argument("--gpu_id", type=int, default=0 if torch.cuda.is_available() else -1)
     p.add_argument("--train_ratio", type=float, default=.8)
-    p.add_argument("--n_epochs", type=int, default=10)
+    p.add_argument("--n_epochs", type=int, default=100)
     p.add_argument("--batch_size", type=int, default=256)
     p.add_argument("--dropout_p", type=float, default=.3)
     p.add_argument("--verbose", type=int, default=1)
@@ -31,7 +32,7 @@ def main(config):
     device = torch.device('cpu') if config.gpu_id < 0 else torch.device('cuda:%d' % config.gpu_id)
 
     # 학습 데이터 불러오기
-    x, y = load_data(pattern=5)
+    x, y = load_data(pattern=config.n_pattern)
     x, y = split_data(x.to(device), y.to(device), train_ratio=config.train_ratio)
 
     # 입출력 데이터 크기 설정

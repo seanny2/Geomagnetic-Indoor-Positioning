@@ -2,7 +2,7 @@ import torch
 import pandas as pd
 
 # 샘플 데이터 -> 텐서
-def load_data(pattern=5):
+def load_data(pattern):
     data_x = pd.read_table("./data/train/inputs.txt", sep=",")
     data_y = pd.read_table("./data/train/outputs.txt")
     x = torch.from_numpy(data_x[['X', 'Y', 'Z', 'F']].values).float()
